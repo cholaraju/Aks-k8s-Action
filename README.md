@@ -41,7 +41,8 @@ AZURE_SUBSCRIPTION_ID
 ### You get these values by creating a service principal:
 
 
-``` az ad sp create-for-rbac --name "github-action-sp" --role contributor \
+``` 
+   az ad sp create-for-rbac --name "github-action-sp" --role contributor \
   --scopes /subscriptions/<subscription-id> \
   --sdk-auth
   
