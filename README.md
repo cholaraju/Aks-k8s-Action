@@ -52,3 +52,8 @@ This GitHub Action connects securely to an Azure Kubernetes Service (AKS) cluste
 It configures Docker and kubectl on the runner and fetches kubeconfig using az aks get-credentials.
 Easily use it to deploy your containerized workloads to AKS from GitHub Actions.
 
+
+
+
+
+
