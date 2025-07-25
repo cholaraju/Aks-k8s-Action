@@ -1,0 +1,27 @@
+name: Azure AKS Deploy Action
+description: Authenticates to Azure using a Service Principal, sets up Docker, kubectl, and deploys to AKS
+inputs:
+  azure_client_id:
+    description: Azure Service Principal Client ID
+    required: true
+  azure_client_secret:
+    description: Azure Service Principal Secret
+    required: true
+  azure_tenant_id:
+    description: Azure Tenant ID
+    required: true
+  azure_subscription_id:
+    description: Azure Subscription ID
+    required: true
+  resource_group:
+    description: AKS Resource Group Name
+    required: true
+  cluster_name:
+    description: AKS Cluster Name
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+branding:
+  icon: cloud
+  color: blue
